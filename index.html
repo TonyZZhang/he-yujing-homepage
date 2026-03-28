@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>何玉静 个人主页 | 山东第一医科大学药学院 | 药剂学硕士生导师</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="何玉静个人学术主页，山东第一医科大学药学院副教授，硕士研究生导师。主要从事智能药物递送系统、铁凋亡介导的肿瘤治疗研究。招收药学学术型硕士与专业硕士，欢迎报考。">
+    <meta name="keywords" content="何玉静,个人主页,山东第一医科大学,药学院,导师,药剂学,硕士生导师,研究生招生">
+    <meta name="author" content="何玉静">
+    
+    <!-- Schema.org 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "何玉静",
+        "jobTitle": ["副教授", "硕士研究生导师"],
+        "worksFor": {
+          "@type": "CollegeOrUniversity",
+          "name": "山东第一医科大学",
+          "department": {
+            "@type": "Organization",
+            "name": "药学院"
+          }
+        },
+        "description": "山东第一医科大学药学院副教授，硕士研究生导师，个人学术主页",
+        "email": "heyujing12@126.com",
+        "url": "https://your-domain.com"
+      }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "SimSun", "宋体", "STSong", serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .container {
+            width: 980px;
+            margin: 0 auto;
+            max-width: 95%;
+        }
+        
+        /* 个人主页头部 - 替代原学校标题栏 */
+        .personal-header {
+            background: linear-gradient(135deg, #1a4b8c 0%, #2c5aa0 100%);
+            color: white;
+            padding: 40px 0;
+            border-bottom: 4px solid #c9a961;
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .header-avatar {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255,255,255,0.2);
+            border: 3px solid rgba(255,255,255,0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-family: "SimHei", "黑体", sans-serif;
+            flex-shrink: 0;
+        }
+        
+        .header-info h1 {
+            font-family: "SimHei", "黑体", sans-serif;
+            font-size: 32px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .header-info .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .header-info .affiliation {
+            font-size: 16px;
+            font-family: "SimHei", "黑体", sans-serif;
+            opacity: 0.95;
+        }
+        
+        .header-info .contact-small {
+            margin-top: 10px;
+            font-size: 13px;
+            opacity: 0.85;
+        }
+        
+        /* 导航栏 - 改为个人栏目 */
+        .personal-nav {
+            background-color: #fff;
+            border-bottom: 2px solid #1a4b8c;
+            padding: 0;
+            font-family: "SimHei", "黑体", sans-serif;
+            font-size: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav-item {
+            padding: 15px 30px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .nav-item:hover, .nav-item.active {
+            color: #1a4b8c;
+            border-bottom-color: #1a4b8c;
+            background-color: #f8f9fa;
+        }
+        
+        /* 主体区域 */
+        .main-wrapper {
+            background-color: white;
+            margin: 30px auto;
+            padding: 50px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        /* 个人信息卡片 */
+        .profile-card {
+            border: 1px solid #e0e0e0;
+            padding: 30px;
+            margin-bottom: 40px;
+            background-color: #fafbfc;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        
+        .profile-photo-area {
+            width: 160px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+        
+        .photo-box {
+            width: 160px;
+            height: 200px;
+            background-color: #e8e8e8;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        .photo-caption {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .profile-details {
+            flex: 1;
+        }
+        
+        .profile-title {
+            font-family: "SimHei", "黑体", sans-serif;
+            font-size: 24px;
+            color: #1a4b8c;
+            margin-bottom: 3px;
+            border-bottom: 2px solid #c9a961;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .profile-en {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            row-gap: 12px;
+            column-gap: 10px;
+            font-size: 13px;
+        }
+        
+        .info-label {
+            color: #666;
+            font-family: "SimHei", "黑体", sans-serif;
+            text-align: right;
+        }
+        
+        .info-value {
+            color: #333;
+            border-bottom: 1px dotted #ddd;
+            padding-bottom: 2px;
+        }
+        
+        .info-value a {
+            color: #1a4b8c;
+            text-decoration: none;
+        }
+        
+        .info-value a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 章节标题 */
+        .section-title {
+            font-family: "SimHei", "黑体", sans-serif;
+            font-size: 18px;
+            color: #1a4b8c;
+            border-left: 5px solid #c9a961;
+            padding-left: 15px;
+            margin: 40px 0 25px 0;
+            line-height: 1.4;
+        }
+        
+        /* 内容样式 */
+        .content-text {
+            text-indent: 2em;
+            margin-bottom: 15px;
+            text-align: justify;
+            line-height: 1.8;
+            color: #444;
+        }
+        
+        .content-list {
+            margin-left: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .content-list li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        /* 招生信息框 - 重要 */
+        .admission-notice {
+            background-color: #f0f7ff;
+            border: 2px solid #1a4b8c;
+            padding: 30px;
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .admission-notice::before {
+            content: "招生信息";
+            position: absolute;
+            top: -12px;
+            left: 30px;
+            background-color: #1a4b8c;
+            color: white;
+            padding: 5px 20px;
+            font-family: "SimHei", "黑体", sans-serif;
+            font-size: 14px;
+        }
+        
+        .admission-content {
+            margin-top: 10px;
+        }
+        
+        .admission-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        
+        .admission-table th {
+            background-color: #e3f2fd;
+            border: 1px solid #90caf9;
+            padding: 12px;
+            text-align: left;
+            font-family: "SimHei", "黑体", sans-serif;
+            font-weight: normal;
+            color: #1a4b8c;
+        }
+        
+        .admission-table td {
+            border: 1px solid #bbdefb;
+            padding: 12px;
+            background-color: white;
+        }
+        
+        /* 数据表格 */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        
+        .data-table th {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-family: "SimHei", "黑体", sans-serif;
+            font-weight: normal;
+            color: #1a4b8c;
+        }
+        
+        .data-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: top;
+        }
+        
+        .data-table tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        
+        /* 页脚 */
+        .footer {
+            background-color: #f0f0f0;
+            border-top: 1px solid #ddd;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .footer-logo {
+            font-family: "SimHei", "黑体", sans-serif;
+            font-size: 16px;
+            color: #1a4b8c;
+            margin-bottom: 10px;
+        }
+        
+        .entity-tag {
+            background-color: #263238;
+            color: #eceff1;
+            text-align: center;
+            padding: 8px;
+            font-family: monospace;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        
+        /* 回到顶部按钮 */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #1a4b8c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .back-to-top:hover {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-card {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            
+            .nav-item {
+                padding: 10px 20px;
+                font-size: 13px;
+            }
+            
+            .main-wrapper {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 个人主页头部 -->
+    <header class="personal-header">
+        <div class="container header-content">
+            <div class="header-avatar">何</div>
+            <div class="header-info">
+                <h1>何玉静</h1>
+                <div class="subtitle">He Yujing, Ph.D. | Personal Academic Homepage</div>
+                <div class="affiliation">
+                    山东第一医科大学（山东省医学科学院）药学院（药物研究所）<br>
+                    副教授 | 硕士研究生导师 | 药剂学
+                </div>
+                <div class="contact-small">
+                    📧 heyujing12@126.com | 📱 176-6122-6069
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 个人导航 -->
+    <nav class="personal-nav">
+        <div class="container nav-container">
+            <a href="#about" class="nav-item active">个人简介</a>
+            <a href="#admission" class="nav-item">招生信息</a>
+            <a href="#education" class="nav-item">教育背景</a>
+            <a href="#research" class="nav-item">科研方向</a>
+            <a href="#publications" class="nav-item">学术成果</a>
+            <a href="#contact" class="nav-item">联系方式</a>
+        </div>
+    </nav>
+
+    <!-- 主体内容 -->
+    <main class="container main-wrapper">
+        
+        <!-- 个人信息卡片 -->
+        <section class="profile-card" id="about">
+            <div class="profile-photo-area">
+                <div class="photo-box">
+                    照片位置<br>（建议尺寸<br>160×200）
+                </div>
+                <div class="photo-caption">何玉静 副教授</div>
+            </div>
+            
+            <div class="profile-details">
+                <div class="profile-title">何玉静 个人简介</div>
+                <div class="profile-en">Lecturer & Master's Supervisor, School of Pharmaceutical Sciences</div>
+                
+                <div class="info-grid">
+                    <div class="info-label">所在单位：</div>
+                    <div class="info-value">山东第一医科大学药学院（药物研究所）</div>
+                    
+                    <div class="info-label">学科专业：</div>
+                    <div class="info-value">药剂学（Pharmaceutics）</div>
+                    
+                    <div class="info-label">导师类别：</div>
+                    <div class="info-value">硕士研究生导师（学硕+专硕）</div>
+                    
+                    <div class="info-label">研究方向：</div>
+                    <div class="info-value">智能药物递送系统、铁凋亡介导的肿瘤治疗</div>
+                    
+                    <div class="info-label">电子邮箱：</div>
+                    <div class="info-value"><a href="mailto:heyujing12@126.com">heyujing12@126.com</a></div>
+                    
+                    <div class="info-label">办公地址：</div>
+                    <div class="info-value">山东省济南市槐荫区青岛路6699号</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 招生信息 - 核心优化区域 -->
+        <section id="admission">
+            <h2 class="section-title">研究生招生信息</h2>
+            
+            <div class="admission-notice">
+                <div class="admission-content">
+                    <p style="text-align: center; font-size: 15px; margin-bottom: 20px;">
+                        <strong>2026年硕士研究生招生进行中</strong><br>
+                        <span style="font-size: 13px; color: #666;">欢迎药学、药物化学、生物学等相关专业背景的同学报考</span>
+                    </p>
+                    
+                    <table class="admission-table">
+                        <tr>
+                            <th style="width: 25%;">招生类型</th>
+                            <th style="width: 20%;">专业代码</th>
+                            <th style="width: 30%;">研究方向</th>
+                            <th style="width: 25%;">备注</th>
+                        </tr>
+                        <tr>
+                            <td><strong>学术型硕士</strong></td>
+                            <td>100700 药学</td>
+                            <td>药剂学（药物递送系统）</td>
+                            <td>学制3年，面向研发与学术</td>
+                        </tr>
+                        <tr>
+                            <td><strong>专业硕士</strong></td>
+                            <td>105500 药学</td>
+                            <td>工业药剂学/临床药学</td>
+                            <td>学制3年，面向应用与实践</td>
+                        </tr>
+                    </table>
+                    
+                    <div style="background-color: white; padding: 15px; border-left: 3px solid #c9a961; margin-top: 15px;">
+                        <strong>报考建议：</strong>有意报考的同学请提前邮件联系，主题注明<strong style="color: #1a4b8c;">"2026考研-姓名-报考专业-初试分数"</strong>，并附上个人简历、本科成绩单及研究兴趣简述。
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 教育背景 -->
+        <section id="education">
+            <h2 class="section-title">教育背景与工作经历</h2>
+            
+            <table class="data-table">
+                <tr>
+                    <th style="width: 20%;">起止时间</th>
+                    <th style="width: 35%;">院校/单位</th>
+                    <th style="width: 25%;">专业/身份</th>
+                    <th style="width: 20%;">学位/职称</th>
+                </tr>
+                <tr>
+                    <td>2019.09 - 至今</td>
+                    <td>山东第一医科大学药学院（药物研究所）</td>
+                    <td>药剂学教研室</td>
+                    <td>副教授、硕士生导师</td>
+                </tr>
+                <tr>
+                    <td>2016.09 - 2019.06</td>
+                    <td>中国药科大学</td>
+                    <td>药剂学</td>
+                    <td>理学博士</td>
+                </tr>
+                <tr>
+                    <td>2013.09 - 2016.06</td>
+                    <td>中国药科大学</td>
+                    <td>工业药学</td>
+                    <td>理学硕士</td>
+                </tr>
+                <tr>
+                    <td>2009.09 - 2013.06</td>
+                    <td>烟台大学</td>
+                    <td>药学</td>
+                    <td>理学学士</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 研究方向 -->
+        <section id="research">
+            <h2 class="section-title">主要研究方向</h2>
+            
+            <div class="content-text">
+                本课题组主要从事<strong>智能型药物递送系统</strong>及<strong>铁凋亡（Ferroptosis）介导的肿瘤治疗</strong>研究，针对肿瘤多药耐药等临床难题，开发基于纳米技术的创新治疗策略。
+            </div>
+            
+            <ol class="content-list">
+                <li>
+                    <strong>智能型药物递送系统：</strong>设计pH响应性、酶响应性纳米载体，实现抗肿瘤药物的靶向递送与可控释放，提高药物在肿瘤部位的富集效率，降低全身毒副作用。
+                </li>
+                <li>
+                    <strong>铁凋亡介导的肿瘤治疗：</strong>基于铁依赖性脂质过氧化机制，开发铁基纳米药物（Fe@MOF等），通过诱导铁凋亡克服肿瘤细胞对传统化疗药物的多药耐药性。
+                </li>
+                <li>
+                    <strong>抗肿瘤多药耐药机制研究：</strong>探索肿瘤干细胞、肿瘤微环境与耐药性的关系，设计联合治疗策略（化疗+铁凋亡诱导），提高抗肿瘤治疗效果。
+                </li>
+            </ol>
+        </section>
+
+        <!-- 科研项目 -->
+        <section>
+            <h2 class="section-title">主持科研项目</h2>
+            
+            <table class="data-table">
+                <tr>
+                    <th style="width: 22%;">项目来源</th>
+                    <th style="width: 48%;">项目名称</th>
+                    <th style="width: 15%;">执行时间</th>
+                    <th style="width: 15%;">资助金额</th>
+                </tr>
+                <tr>
+                    <td>国家自然科学基金<br>（青年科学基金项目）</td>
+                    <td>脂质过氧化物生成器用于铁凋亡介导的抗肿瘤多药耐药研究<br><span style="font-size: 11px; color: #666;">项目编号：82003677</span></td>
+                    <td>2021.01 - 2023.12</td>
+                    <td>24.0 万元</td>
+                </tr>
+                <tr>
+                    <td>山东省自然科学基金<br>（青年项目）</td>
+                    <td>仿转铁蛋白纳米颗粒用于铁凋亡介导的抗肿瘤多药耐药研究</td>
+                    <td>2021.01 - 2023.12</td>
+                    <td>15.0 万元</td>
+                </tr>
+                <tr>
+                    <td>山东省医药卫生<br>科技发展计划项目</td>
+                    <td>铁凋亡递送体系的构建及其克服肿瘤多药耐药的研究</td>
+                    <td>2020.01 - 2022.12</td>
+                    <td>2.0 万元</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 学术成果 -->
+        <section id="publications">
+            <h2 class="section-title">代表性学术成果</h2>
+            
+            <ol class="content-list">
+                <li>
+                    <strong>He Yujing</strong>, Liu Xiaoying, Xing Lei, et al. Fenton reaction-independent ferroptosis therapy via glutathione and iron redox couple sequentially triggered lipid peroxide generator. <em>Biomaterials</em>, 2020, 119911. (SCI一区，影响因子：15.3)
+                </li>
+                <li>
+                    <strong>He Yujing</strong>, Xing Lei, Cui Pengfei, et al. Transferrin-inspired vehicles based on pH-responsive coordination bond to combat multidrug-resistant breast cancer. <em>Biomaterials</em>, 2017, 113: 266-278. (SCI一区)
+                </li>
+                <li>
+                    Li Baoqiang, Lv Teng, Liu Zhiyuan, <strong>He Yujing*</strong>, et al. Lip@SF&FAC: A liposome and ferrous ascorbate co-loaded hydrogel achieves synergistic amplification of ferroptosis therapy. <em>Advanced Healthcare Materials</em>, 2023, 12(8): e2203208. (SCI二区，共同通讯作者)
+                </li>
+                <li>
+                    Hou Yanhua#, Liu Yinan#, <strong>He Yujing#</strong>, et al. Developing electro-responsive chitosan microcapsules as a bioactive wound dressing to accelerate diabetic wound healing. <em>Carbohydrate Polymers</em>, 2024, 326: 121638. (SCI一区，共同第一作者)
+                </li>
+            </ol>
+        </section>
+
+        <!-- 教学获奖 -->
+        <section>
+            <h2 class="section-title">教学与获奖情况</h2>
+            
+            <ul class="content-list">
+                <li>2024年 山东省研究生优质课程《药学前沿》立项建设（课程团队成员）</li>
+                <li>2022年 第四届全国药学专业学位研究生优秀教学案例奖（教学案例：《基于氢为治疗物质的药物制剂及其设计》）</li>
+                <li>2022年 山东省教师教学创新大赛一等奖（中级及以下组，团队成员）</li>
+                <li>2022年 山东第一医科大学青年教师教学比赛二等奖</li>
+                <li>2022年 山东第一医科大学教学能手称号</li>
+                <li>2021年 山东第一医科大学青年教学能手称号</li>
+            </ul>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact" style="margin-top: 50px; padding-top: 30px; border-top: 3px solid #1a4b8c;">
+            <h2 class="section-title">联系方式</h2>
+            
+            <div style="background-color: #f5f5f5; padding: 30px; text-align: center; border: 1px solid #e0e0e0;">
+                <div style="font-size: 18px; color: #1a4b8c; font-family: 'SimHei', '黑体', sans-serif; margin-bottom: 20px;">
+                    欢迎对药物递送、肿瘤治疗研究感兴趣的同学加入课题组
+                </div>
+                
+                <div style="font-size: 15px; line-height: 2;">
+                    <strong>电子邮箱：</strong><a href="mailto:heyujing12@126.com" style="color: #1a4b8c; text-decoration: none; font-size: 16px;">heyujing12@126.com</a><br>
+                    <strong>办公电话：</strong>176-6122-6069<br>
+                    <strong>通讯地址：</strong>山东省济南市槐荫区青岛路6699号，山东第一医科大学药学院<br>
+                    <strong>邮政编码：</strong>250117
+                </div>
+                
+                <div style="margin-top: 20px; font-size: 12px; color: #999;">
+                    邮件主题请注明：2026考研-姓名-报考专业-初试分数
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">何玉静 个人学术主页</div>
+            <p>所在单位：山东第一医科大学药学院（药物研究所）药剂学教研室</p>
+            <p>本页面由教师本人维护更新 | 最后更新时间：2026年3月</p>
+            <p style="font-size: 11px; color: #999; margin-top: 10px;">
+                声明：本主页为个人学术主页，信息仅供学术交流与招生咨询使用
+            </p>
+        </div>
+        
+        <!-- 实体标记 - 用于AI识别 -->
+        <div class="entity-tag">
+            Entity: 何玉静 | 山东第一医科大学药学院 | 药剂学 | 硕士研究生导师 | 智能药物递送 | 铁凋亡 | 肿瘤治疗 | 研究生招生
+        </div>
+    </footer>
+
+    <!-- 回到顶部 -->
+    <a href="#" class="back-to-top" title="回到顶部">↑</a>
+
+</body>
+</html>
